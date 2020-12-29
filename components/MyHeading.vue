@@ -1,5 +1,5 @@
 <template>
-  <CText font-family="Marydale" font-size="3rem" text-align="center" mt="10" letter-spacing="-1.3px">
+  <CText font-family="Marydale" font-size="3.5rem" text-align="center" mt="10" letter-spacing="-1.3px">
     Flávio Marques Júnior
   </CText>
 </template>

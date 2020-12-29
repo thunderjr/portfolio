@@ -5,7 +5,7 @@
       align-self="center"
       justify="center"
       font-size="xl"
-      my="3"
+      my="2"
     >
       <CButton
         to="/"
@@ -17,22 +17,24 @@
         px="3"
       />
       <CButton
-        to="https://github.com/thunderjr"
+        as="a"
+        href="https://github.com/thunderjr"
+        target="_blank"
         left-icon="github"
         variant="outline"
         variant-color="indigo"
-        as="nuxt-link"
         font-size="lg"
         box-shadow="md"
         px="3"
         bg="#fff"
       />
       <CButton
-        to="https://www.linkedin.com/in/flávio-marques-07b566194/"
+        as="a"
+        href="https://www.linkedin.com/in/flávio-marques-07b566194/"
+        target="_blank"
         left-icon="linkedin"
         variant="outline"
         variant-color="indigo"
-        as="nuxt-link"
         font-size="lg"
         box-shadow="md"
         px="3"

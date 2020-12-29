@@ -25,25 +25,29 @@
       v-bind="contentBoxStyles[colorMode]"
       w="85%"
       my="6"
-      max-width="1300px"
+      max-width="1200px"
+      min-height="550px"
       align-self="center"
       rounded="md"
       box-shadow="lg"
-      template-columns="350px 1fr"
-      gap="1.2em"
+      template-columns="350px auto"
+      gap="1em"
+      pr="1.5em"
     >
       <ChatBox />
-      <CFlex wrap="wrap" my="1.2em">
+      <CGrid gap=".5em" template-columns="repeat(auto-fit, minmax(220px, 1fr))" my="1em">
         <ProjectCard
           v-for="(project, i) in projects"
           :key="`project${i}`"
           v-bind="project"
         />
-      </CFlex>
+      </CGrid>
     </CGrid>
 
     <CBox position="absolute" top="5" right="10">
       <CIconButton
+        variant="outline"
+        variant-color="indigo"
         :icon="colorMode === 'light' ? 'moon' : 'sun'"
         :aria-label="`Switch to ${
           colorMode === 'light' ? 'dark' : 'light'

@@ -12,7 +12,7 @@ export const state = () => ({
         { text: 'Node.js', icon: 'node-js' }
       ],
       shortcuts: [
-        { icon: 'link', text: 'Acesse', url: 'http://google.com' }
+        { icon: 'link', text: 'Acessar', url: '' }
       ]
     },
     {
@@ -27,7 +27,7 @@ export const state = () => ({
         { text: 'CSS', icon: 'css3-alt' }
       ],
       shortcuts: [
-        { icon: 'link', text: 'Acesse', url: 'http://google.com' }
+        { icon: 'link', text: 'Acessar', url: 'https://prismastore.vercel.app/' }
       ]
     },
     {
@@ -41,7 +41,7 @@ export const state = () => ({
         { text: 'CSS', icon: 'css3-alt' }
       ],
       shortcuts: [
-        { icon: 'github', text: 'GitHub', url: 'https://github.com/' }
+        { icon: 'link', text: 'Acessar', url: 'https://mercadolivreapi.flaviojunior3.repl.co/' }
       ]
     },
     {

@@ -1,7 +1,6 @@
 <template>
+  <!-- width="260px" -->
   <Flipper
-    width="260px"
-    height="260px"
     class="flipper"
     :flipped="flipped"
     @click="onClick"
@@ -18,23 +17,31 @@
         <CHeading as="h3" font-size="lg" mb="2" line-height="1em">
           {{ name }}
         </CHeading>
-        <CFlex mt="auto">
+
+        <CFlex mt="auto" align="flex-end" :mx="`-2px`" :mb="`-2px`">
+          <!-- shortcuts -->
           <CFlex>
-            <CTooltip
+            <CIconButton
               v-for="(s, i) in shortcuts"
               :key="`shortcut${i}`"
-              :label="s.text"
-            >
-              <CBox><CIcon v-bind="iconStyles[colorMode]" :name="s.icon" size="1.1em" mr="1" /></CBox>
-            </CTooltip>
+              :icon="s.icon"
+              :href="s.url"
+              :aria-label="s.text"
+              class="shortcut-button"
+              v-bind="iconStyles[colorMode]"
+              variant-color="indigo"
+              variant="outline"
+              font-size=".8em"
+              target="_blank"
+              size="xs"
+              as="a"
+              mr="1"
+            />
           </CFlex>
 
+          <!-- technologies -->
           <CFlex ml="auto">
-            <CTooltip
-              v-for="(tech, i) in technologies"
-              :key="`tech${i}`"
-              :label="tech.text"
-            >
+            <CTooltip v-for="(tech, i) in technologies" :key="`tech${i}`" :label="tech.text">
               <CBox><CIcon v-bind="iconStyles[colorMode]" :name="tech.icon" size="1.6em" /></CBox>
             </CTooltip>
           </CFlex>
@@ -141,7 +148,7 @@ export default {
 <style>
 @keyframes pulse {
   0% {
-    transform: scale(0.91);
+    transform: scale(0.93);
   }
 
   70% {
@@ -149,22 +156,23 @@ export default {
   }
 
   100% {
-    transform: scale(0.91);
+    transform: scale(0.93);
   }
 }
 </style>
 <style scoped>
   .flipper {
     margin: 0.25rem;
+    min-height: 235px;
   }
 
-   .click-wrapper {
+  .click-wrapper {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
     top: 25%;
     left: 37.5%;
-    animation: 1s pulse infinite;
+    animation: .6s pulse infinite;
   }
 
   .slot img {
@@ -179,7 +187,6 @@ export default {
   .Flipper__face--front:hover .slot img {
     filter: brightness(50%);
     -webkit-filter: brightness(50%);
-    filter: blur(50%);
   }
 
   .Flipper__face--front:hover .click-wrapper {
