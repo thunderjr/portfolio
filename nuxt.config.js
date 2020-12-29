@@ -1,6 +1,6 @@
 import { ChakraLoaderPlugin } from 'chakra-loader'
 
-import { faLink, faMobileAlt, faFire, faHandPointer, faUserTag, faHome } from '@fortawesome/free-solid-svg-icons'
+import { faExternalLinkSquareAlt, faMobileAlt, faFire, faHandPointer, faUserTag, faHome } from '@fortawesome/free-solid-svg-icons'
 import {
   faGithub,
   faJs,
@@ -17,7 +17,7 @@ export default {
     icons: {
       iconPack: 'fa',
       iconSet: {
-        faLink,
+        faExternalLinkSquareAlt,
         faGithub,
         faJs,
         faHtml5,
