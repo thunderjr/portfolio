@@ -20,7 +20,7 @@
 
         <CFlex mt="auto" align="flex-end" :mx="`-2px`" :mb="`-2px`">
           <!-- shortcuts -->
-          <CFlex>
+          <CFlex v-if="shortcuts.length > 0">
             <CIconButton
               v-for="(s, i) in shortcuts"
               :key="`shortcut${i}`"
