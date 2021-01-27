@@ -12,7 +12,7 @@ export const state = () => ({
         { text: 'Node.js', icon: 'node-js' }
       ],
       shortcuts: [
-        { icon: 'external-link-square-alt', text: 'Acessar', url: '' }
+        // { icon: 'external-link-square-alt', text: 'Acessar', url: '' }
       ]
     },
     {
