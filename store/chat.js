@@ -14,7 +14,7 @@ export const state = () => ({
       `Olá, ${greeting()}`,
       'Me chamo Flávio, e trabalho com programação Web.',
       'Hoje, com minhas soluções, consigo ajudar empreendedores a terem controle de seus negócios e finanças de forma digital, e meu foco é alcançar o nível de escala nos meus projetos.',
-      'Ao lado você encontrará alguns dos trabalhos que considero importante para o meu aprendizado! 😉'
+      'Ao lado você encontrará alguns dos trabalhos que considero importantes para o meu aprendizado! 😉'
     ]
   }
 })
